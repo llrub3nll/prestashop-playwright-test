@@ -1,0 +1,12 @@
+export const TEST_CONFIG = {
+  BASE_URL: 'https://demo.prestashop.com/',
+  TIMEOUTS: {
+    PAGE_LOAD: 30000,
+    TEST: 120000,
+    ELEMENT_VISIBLE: 10000,
+    ELEMENT_VISIBLE_LONG: 15000,
+    ELEMENT_VISIBLE_EXTRA_LONG: 20000,
+    SHORT_WAIT: 2000,
+    MEDIUM_WAIT: 5000,
+  },
+} as const;
