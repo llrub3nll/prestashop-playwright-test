@@ -43,22 +43,26 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
+      testMatch: /.*cart\.spec\.ts/, // Only run desktop tests
     },
 
     // {
     //   name: 'firefox',
     //   use: { ...devices['Desktop Firefox'] },
+    //   testMatch: /.*cart\.spec\.ts/,
     // },
 
     // {
     //   name: 'webkit',
     //   use: { ...devices['Desktop Safari'] },
+    //   testMatch: /.*cart\.spec\.ts/,
     // },
 
     /* Test against mobile viewports. */
     {
       name: 'Mobile Chrome',
       use: { ...devices['iPhone 14'] },
+      testMatch: /.*cart-mobile\.spec\.ts/, // Only run mobile tests
     },
 
     /* Test against branded browsers. */
